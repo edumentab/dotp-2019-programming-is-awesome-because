@@ -1,0 +1,10 @@
+digraph {
+  rankdir=LR
+  HighlightJS -> RevealJS
+  Markdown -> RevealJS
+  RevealJS -> MC2
+  Graphviz -> MC2
+  Firebase -> MC2
+  MC2 -> next
+  next [label="?"]
+}

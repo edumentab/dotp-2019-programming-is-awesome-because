@@ -1,0 +1,6 @@
+digraph {
+  HighlightJS -> RevealJS
+  Markdown -> RevealJS
+  RevealJS -> MC2
+  Graphviz -> MC2
+}

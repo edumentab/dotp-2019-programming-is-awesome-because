@@ -1,0 +1,38 @@
+#troll {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  /* background-color: yellow; */
+  background-image: url(../resources/piab.png);
+  background-size: contain;
+  transition: left 0.5s ease, bottom 0.5s ease;
+  z-index: 1;
+}
+
+.troll #troll {
+  left: 0;
+  bottom: -4.5%;
+  transition-delay: 0.15s;
+}
+
+.angry {
+  font-family: "Freckle Face";
+  text-shadow: 0 0 18px green;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.angry:not(:first-child) {
+  margin-top: 1em;
+}
+
+.angry strong {
+  font-family: "Freckle Face" !important;
+}
+
+.slide.present .angry {
+  transition-delay: 0.45s;
+  opacity: 1;
+}

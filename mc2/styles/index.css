@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url(../font/bitstream-vera-sans-mono/vera-mono.css);
+@import url(../font/baskerville/font-baskerville.css);
+@import url(../font/roboto/font-roboto.css);
+/*** built-in emcee index styles ***/
+body {
+  overflow: hidden;
+  /* prevent detailed overview from causing horisontal scroll bar */ }
+
+.firstpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: #5898AE;
+  transition: opacity 0.3s ease; }
+
+.showoverview .firstpage {
+  opacity: 0; }
+
+.showoverview .detailedoverview {
+  opacity: 1; }
+
+.detailedoverview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: #5898AE;
+  transition: opacity 0.3s ease;
+  flex-wrap: wrap;
+  padding: 10px; }
+  .detailedoverview > div {
+    width: 30%; }
+
+.splash {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36px; }
+  .splash h1 {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 0; }
+
+.slideindex {
+  flex: 1;
+  align-self: stretch;
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .slideindex > div {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    justify-content: center; }
+    .slideindex > div > div {
+      padding: 10px;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      max-width: 600px; }
+  .slideindex a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px; }
+    .slideindex a.active {
+      color: #5898AE; }
+      .slideindex a.active:before {
+        display: block;
+        position: absolute;
+        content: "›";
+        margin-left: -25px;
+        line-height: 32px; }
+
+.logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-width: 8%;
+  display: none; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZHdhbGxlci8ubnBtL19jYWNhY2hlL3RtcC9naXQtY2xvbmUtOWIxNzI4YTgvc3R5bGVzL2luZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FBQ2hCLDJEQUEyRDtBQUMzRCxxREFBcUQ7QUFDckQsMkNBQTJDO0FBQzNDLG9DQUFvQztBQUNwQztFQUNFLGdCQUFnQjtFQUNoQixpRUFBaUUsRUFBRTs7QUFFckU7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixTQUFTO0VBQ1QsT0FBTztFQUNQLFFBQVE7RUFDUixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLDZCQUE2QixFQUFFOztBQUVqQztFQUNFLFVBQVUsRUFBRTs7QUFFZDtFQUNFLFVBQVUsRUFBRTs7QUFFZDtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDJCQUEyQjtFQUMzQixrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLFNBQVM7RUFDVCxPQUFPO0VBQ1AsUUFBUTtFQUNSLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsNkJBQTZCO0VBQzdCLGVBQWU7RUFDZixhQUFhLEVBQUU7RUFDZjtJQUNFLFVBQVUsRUFBRTs7QUFFaEI7RUFDRSxPQUFPO0VBQ1AsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixrQkFBa0I7RUFDbEIsbUVBQW1FO0VBQ25FLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsZUFBZSxFQUFFO0VBQ2pCO0lBQ0UsbUVBQW1FO0lBQ25FLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLGdCQUFnQixFQUFFOztBQUV0QjtFQUNFLE9BQU87RUFDUCxtQkFBbUI7RUFDbkIseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCLEVBQUU7RUFDekI7SUFDRSxpQkFBaUI7SUFDakIsYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtRUFBbUU7SUFDbkUsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix1QkFBdUIsRUFBRTtJQUN6QjtNQUNFLGFBQWE7TUFDYixtQkFBbUI7TUFDbkIsYUFBYTtNQUNiLHNCQUFzQjtNQUN0QixPQUFPO01BQ1AsZ0JBQWdCLEVBQUU7RUFDdEI7SUFDRSxZQUFZO0lBQ1oscUJBQXFCO0lBQ3JCLHFCQUFxQjtJQUNyQixtQkFBbUIsRUFBRTtJQUNyQjtNQUNFLGNBQWMsRUFBRTtNQUNoQjtRQUNFLGNBQWM7UUFDZCxrQkFBa0I7UUFDbEIsWUFBWTtRQUNaLGtCQUFrQjtRQUNsQixpQkFBaUIsRUFBRTs7QUFFM0I7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFdBQVc7RUFDWCxhQUFhO0VBQ2IsYUFBYSxFQUFFIiwiZmlsZSI6ImluZGV4LmNzcyJ9 */

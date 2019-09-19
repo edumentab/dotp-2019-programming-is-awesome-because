@@ -1,0 +1,113 @@
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.locations img {
+  display: block;
+  width: 35%;
+  align-self: center;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buildings {
+  display: flex;
+  justify-content: center;
+}
+
+.buildings > div {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  font-size: 12px;
+  justify-content: flex-end;
+}
+
+.buildings > div > img {
+  align-self: center;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent;
+  transform: scale(1.3, 1.3);
+}
+
+.buildings > div > span:first-of-type {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buildings > div > span:last-child {
+  font-style: italic;
+}
+
+twitter-widget {
+  margin: 0 auto;
+}
+
+img.trans {
+  border: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+img.tslogo {
+  max-height: 200px;
+}
+
+img.anders {
+  max-height: 250px;
+}
+
+/** my course-specific styles **/
+
+body .reveal section .whitebg img {
+  background-color: #eee;
+}
+
+.reveal section img[alt="dot"] {
+  background-color: #eee;
+  border-radius: 13px;
+  border: none;
+  padding: 7px;
+}
+
+body .reveal section img.img_no_border {
+  border: none;
+}
+
+body .reveal section img.img_no_background {
+  background-color: transparent;
+}
+
+/*
+The Equality boxes are also prevalent throughout
+*/
+.reveal .equality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal .equality img {
+  border: 0;
+  height: 140px;
+  display: inline-block;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal .equality span {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 70px;
+}
+
+.reveal .equality img.isblack {
+  /* special style for imgs which needs some kind of bg work */
+}

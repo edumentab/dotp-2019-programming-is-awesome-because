@@ -1,0 +1,119 @@
+#pos {
+  display: none;
+}
+
+.chapternumber {
+  /*display: none !important;*/
+}
+
+#piab {
+  position: absolute;
+  bottom: -100%;
+  left: 5%;
+  width: 350px;
+  height: 350px;
+  /* background-color: yellow; */
+  background-image: url(../resources/piab.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: bottom 0.5s ease;
+  z-index: 1;
+
+  transform-origin: bottom left;
+}
+
+.piab #piab {
+  bottom: -4.5%;
+  transition-delay: 0.15s;
+  animation: wag 3s infinite;
+  animation-timing-function: linear;
+}
+
+.slide .piab {
+  display: inline-block;
+  background-color: gold;
+  border: 10px solid crimson;
+  padding: 0 15px;
+  border-radius: 10px;
+  color: black;
+  position: relative;
+  min-width: 400px;
+}
+
+@keyframes wag {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/***** STARS *****/
+
+.piab .stars {
+  position: absolute;
+  width: 100%;
+  margin-top: -30px;
+  margin-left: -15px;
+}
+
+.piab .stars span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 14px;
+  background-image: url("../resources/star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -10px;
+  color: white;
+}
+
+.piab .stars span.max {
+  animation: pulse 0.7s ease 0s infinite;
+}
+
+.piab .stars span:not(:first-child) {
+  margin-left: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.4, 1.4);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.piab-key {
+  position: absolute;
+  width: 100%;
+  margin-top: -35px;
+  text-align: center;
+}
+
+.piab-key > span {
+  display: inline-block;
+  background-color: crimson;
+  padding: 0 10px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.7em;
+}
